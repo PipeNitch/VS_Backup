@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#3586;&#3657;&#3629;5"/>
+        <attribute name="authors" value="pipen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 03:08:18 PM"/>
+        <attribute name="created" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAzOjAwOjA5IFBNOzIzNDI="/>
+        <attribute name="edited" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAzOjAyOjIzIFBNOzM7cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAyOjUyOjMyIFBNO+C4guC5ieC4rTQuZnByZzsxNjMxMw=="/>
+        <attribute name="edited" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAzOjA4OjE4IFBNOzE7MjQ1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, h, m, charge" type="Integer" array="False" size=""/>
+            <assign variable="charge" expression="0"/>
+            <input variable="c"/>
+            <input variable="h"/>
+            <input variable="m"/>
+            <assign variable="m" expression="(h*60)+m"/>
+            <if expression="c&gt;=1000">
+                <then>
+                    <if expression="m&gt;240">
+                        <then>
+                            <assign variable="m" expression="m-240"/>
+                            <while expression="m&gt;0">
+                                <assign variable="m" expression="m-60"/>
+                                <assign variable="charge" expression="charge+30"/>
+                            </while>
+                            <output expression="charge" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="charge" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="m&gt;60">
+                        <then>
+                            <assign variable="m" expression="m-60"/>
+                            <while expression="m&gt;0">
+                                <assign variable="m" expression="m-60"/>
+                                <assign variable="charge" expression="charge+30"/>
+                            </while>
+                            <output expression="charge" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="charge" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#3586;&#3657;&#3629;2"/>
+        <attribute name="authors" value="pipen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 02:50:36 PM"/>
+        <attribute name="created" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAyOjQ1OjI4IFBNOzIzNTE="/>
+        <attribute name="edited" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAyOjUwOjM2IFBNOzE7MjQ1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <if expression="n%3==0&amp;&amp;n%5==0">
+                <then>
+                    <output expression="&quot;&#3627;&#3634;&#3619;&#3604;&#3657;&#3623;&#3618; 3 &#3649;&#3621;&#3632; 5 &#3621;&#3591;&#3605;&#3633;&#3623;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#3627;&#3634;&#3619;&#3604;&#3657;&#3623;&#3618; 3 &#3649;&#3621;&#3632; 5 &#3652;&#3617;&#3656;&#3621;&#3591;&#3605;&#3633;&#3623;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

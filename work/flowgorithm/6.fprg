@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#3586;&#3657;&#3629;6"/>
+        <attribute name="authors" value="pipen"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-02 03:13:33 PM"/>
+        <attribute name="created" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAzOjA5OjQ1IFBNOzIzNTE="/>
+        <attribute name="edited" value="cGlwZW47SUNPTk9GWTsyMDI0LTEwLTAyOzAzOjEzOjMzIFBNOzE7MjQ1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gd" type="String" array="False" size=""/>
+            <declare name="w, h" type="Integer" array="False" size=""/>
+            <input variable="gd"/>
+            <input variable="w"/>
+            <input variable="h"/>
+            <if expression="gd=&quot;male&quot;">
+                <then>
+                    <if expression="w&gt;h-100">
+                        <then>
+                            <output expression="&quot;&#3588;&#3623;&#3619;&#3629;&#3629;&#3585;&#3585;&#3635;&#3621;&#3633;&#3591;&#3585;&#3634;&#3618;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#3588;&#3640;&#3603;&#3612;&#3641;&#3657;&#3594;&#3634;&#3618;&#3627;&#3640;&#3656;&#3609;&#3604;&#3637;&#3648;&#3618;&#3637;&#3656;&#3618;&#3617;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="w&gt;h-110">
+                        <then>
+                            <output expression="&quot;&#3588;&#3623;&#3619;&#3629;&#3629;&#3585;&#3585;&#3635;&#3621;&#3633;&#3591;&#3585;&#3634;&#3618;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#3588;&#3640;&#3603;&#3612;&#3641;&#3657;&#3627;&#3597;&#3636;&#3591;&#3627;&#3640;&#3656;&#3609;&#3604;&#3637;&#3648;&#3618;&#3637;&#3656;&#3618;&#3617;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

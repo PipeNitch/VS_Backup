@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int m, n;
+    cin >> m >> n;
+
+    vector<vector<double>> matrix(n, vector<double>(m));
+    double minVal = numeric_limits<double>::max();
+    double maxVal = numeric_limits<double>::lowest();
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            cin >> matrix[i][j];
+            if (matrix[i][j] < minVal) {
+                minVal = matrix[i][j];
+            }
+            if (matrix[i][j] > maxVal) {
+                maxVal = matrix[i][j];
+            }
+        }
+    }
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            if (maxVal - minVal == 0) {
+                matrix[i][j] = 0;
+            } else {
+                matrix[i][j] = (matrix[i][j] - minVal) / (maxVal - minVal);
+            }
+            cout << fixed << setprecision(4) << matrix[i][j];
+            if (j < m - 1) cout << " ";
+        }
+          cout << endl;
+    }
+
+    return 0;
+}

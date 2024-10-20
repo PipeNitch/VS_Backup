@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int isPrime(int num){
+    if(num<=1){
+        return 0;
+    }
+    for(int i=2;i*i<=num;i++){
+        if(num%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main(){
+    int a;
+    cin>>a;
+    if(isPrime(a))cout<<"is prime";
+    else cout<<"is not prime";
+    
+    return 0;
+}

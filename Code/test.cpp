@@ -1,15 +1,16 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define windows ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0)
-typedef long long ll;
-#define forr(i,a,n) for(int i=a;i<n;i++)
-#define endll '\n'
-#define sp ' '
-#define fpre(n) fixed<<setprecision(n)
-#define forl(i,a,n) for(int i=a;i>n;i--)
 
-int main(){windows;
-  
+int L[int(1e9+1)];
+
+int main(){
+  int n,c=0;cin>>n;
+  for(int i=1;i<=n;i++){
+    int bin;cin>>bin;
+    L[bin]++;
+  }
+  for(int i=1;i<=sizeof(L)/sizeof(L[0]);i++)if(!(L[i]%2))c++;
+  cout<<c;
 
   return 0;
 }
